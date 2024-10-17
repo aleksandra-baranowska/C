@@ -1,6 +1,7 @@
 #include <stdio.h>
+#pragma warning(disable : 4996)
 
-int main(void) 
+int main(void)
 {
     int dzielnik, dzielna, reszta;
 
@@ -11,7 +12,7 @@ int main(void)
     printf("Podaj dzielna (<= 0, aby zakonczyc): ");
     scanf("%d", &dzielna);
 
-    while (dzielna > 0) 
+    while (dzielna > 0)
     {
         reszta = dzielna % dzielnik;
         printf("%d %% %d wynosi %d\n", dzielna, dzielnik, reszta);
