@@ -1,19 +1,18 @@
 #include <stdio.h>
+#pragma warning(disable : 4996)
 
-void szescian();
-
-int main(void) 
+void szescian(float liczba);
+int main(void)
 {
     float liczba;
 
     printf("Podaj liczbe typu float: ");
     scanf("%f", &liczba);
-
-    szescian();
+    szescian(liczba);
     return 0;
 }
 
-szescian() 
+void szescian(float liczba)
 {
     float wynik;
 
