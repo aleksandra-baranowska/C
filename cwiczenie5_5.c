@@ -1,17 +1,20 @@
 #include <stdio.h>
+#pragma warning(disable : 4996)
 
-int main(void) 
+int main(void)
 {
-    int zap³ata, suma, dni;
+    int zaplata, suma, dni;
 
     printf("Podaj przepracowane dni: ");
     scanf("%d", &dni);
 
-    zap³ata = 0;
+    zaplata = 1;
+    suma = 0;
 
-    while (zap³ata++ < zakres) 
+    while (zaplata <= dni)
     {
-        suma = suma + zap³ata;
+        suma = suma + 1;
+        zaplata++;
     }
 
     printf("Suma za %d dni wynosi %d\n", dni, suma);
