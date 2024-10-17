@@ -1,17 +1,20 @@
 #include <stdio.h>
-
-int main(void) 
+#pragma warning(disable : 4996)
+int main(void)
 {
-    int liczba;  
- 
+    int liczba;
 
-    printf("Podaj liczbê ca³kowit¹: ");
+
+    printf("Podaj liczbe calkowita: ");
     scanf("%d", &liczba);
 
-    while (liczba = liczba + 10) 
+    int licznik = 0;
+
+    while (licznik <= 10)
     {
-        printf("%d ", i);
+        printf("%d ", liczba);
         liczba++;
+        licznik++;
     }
 
     printf(" ");
