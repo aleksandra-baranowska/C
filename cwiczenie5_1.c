@@ -6,7 +6,7 @@ int main(void)
 {
     int czas;
 
-    printf("Podaj czas w minutach (wpisz 0 lub liczbê ujemn¹, aby zakoñczyæ): ");
+    printf("Podaj czas w minutach (wpisz 0 lub liczbÄ™ ujemna, aby zakonczyc): ");
     scanf("%d", &czas);
 
     int h, min;
@@ -17,7 +17,7 @@ int main(void)
         min = czas % GODZINA;
 
         printf("%d minut to %d godzin i %d minut.\n", czas, h, min);
-        printf("Podaj czas w minutach (wpisz 0 lub liczbê ujemn¹, aby zakoñczyæ): ");
+        printf("Podaj czas w minutach (wpisz 0 lub liczbÄ™ ujemnÅ¡, aby zakoÅ„czyÄ‡): ");
         scanf("%d", &czas);
     }
     return 0;
