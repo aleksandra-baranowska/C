@@ -1,4 +1,5 @@
 #include <stdio.h>
+#pragma warning(disable : 4996)
 
 void Temperatura(double fahrenheit);
 
@@ -7,19 +8,20 @@ int main(void) {
     int status;
 
     printf("Podaj temperature w stopniach Fahrenheita (lub wpisz 'k', aby zakonczyc): ");
-    scanf("%lf", &fahrenheit);
+    status = scanf("%lf", &fahrenheit);
 
-    while ((status = fahrenheit)) == 1) 
+    while (status == 1)
     {
         Temperatura(fahrenheit);
         printf("Podaj temperature w stopniach Fahrenheita (lub wpisz 'k', aby zakonczyc): ");
+        status = scanf("%lf", &fahrenheit);
     }
 
     printf("Koniec programu.\n");
     return 0;
 }
 
-void Temperatura(double fahrenheit) 
+void Temperatura(double fahrenheit)
 {
     const double przelicznik = 5.0 / 9.0;
     const double stala_kelwina = 273.16;
