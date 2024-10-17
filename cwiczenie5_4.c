@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#pragma warning(disable : 4996)
 #define CM_W_CALACH 2.54
 #define CALE_W_STOPIE 12
 
@@ -19,7 +19,7 @@ int main(void)
 
         printf("%.1f cm = %.0f stop, %.1f cali\n", cm, stopy, reszta_cali);
 
-        printf("Podaj wzrost w centymetrach (<=0 — koniec): ");
+        printf("Podaj wzrost w centymetrach (<=0 â€” koniec): ");
         scanf("%f", &cm);
     }
 
